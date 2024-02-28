@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0F0F0F;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1C1C1C;
+      padding: 20px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .hero iframe {
+      width: 100%;
+      height: 100%;
+    }
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .overlay h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .overlay p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .overlay .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: #000000;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .overlay .btn:hover {
+      background-color: #FFFFFF;
+    }
+    .features {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .feature {
+      margin-bottom: 40px;
+    }
+    .feature h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      font-size: 18px;
+    }
+    footer {
+      background-color: #1C1C1C;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .footer-links ul {
+      padding: 0;
+    }
+    .footer-links ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    .footer-links ul li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-links ul li a:hover {
+      color: #FFD700;
+    }
+    .newsletter {
+      margin-top: 30px;
+    }
+    .newsletter h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 10px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .newsletter button:hover {
+      background-color: #FFFFFF;
+    }
+
+    /* Animation */
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .fullscreen-video {
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.5s ease;
+    }
+    .fade-out {
+      opacity: 0;
+      animation: fadeOut 0.5s forwards;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="C:\Users\HP\Downloads\logo.png" alt="Game Website Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Purchase</a></li>
+      <li><a href="#">Social Media</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <!-- Embed the Riders Republic trailer here with autoplay -->
+  <iframe class="fullscreen-video" src="https://www.youtube.com/embed/B1TRRiLOw0Q?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  <div class="overlay">
+    <h1>Welcome to our Game Website</h1>
+    <p>Discover amazing games, join our vibrant community, and explore valuable resources for game development.</p>
+    <a href="#" class="btn">Explore Now</a>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h2>Immersive Gameplay</h2>
+    <p>Experience breathtaking adventures in our collection of games designed for ultimate immersion.</p>
+  </div>
+  <div class="feature">
+    <h2>Community Engagement</h2>
+    <p>Connect with fellow gamers, share experiences, and participate in exciting events.</p>
+  </div>
+  <div class="feature">
+    <h2>Resources for Developers</h2>
+    <p>Access valuable resources, tutorials, and tools to fuel your journey in game development.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </div>
+  <div class="newsletter">
+    <h3>Subscribe to our Newsletter</h3>
+    <form action="#">
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('.fullscreen-video');
+
+    window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+
+      
+      var threshold = video.offsetTop + (video.offsetHeight / 2);
+
+      // Check if the scroll position is below the threshold
+      if (scrollPosition > threshold) {
+        video.classList.add('fade-out');
+      } else {
+        video.classList.remove('fade-out');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
